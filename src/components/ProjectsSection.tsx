@@ -6,49 +6,49 @@ import { ExternalLink, Github, Brain, Server, Network } from 'lucide-react';
 const ProjectsSection = () => {
   const projects = [
     {
-      title: 'Machine Learning Path - DBS Foundation',
-      description: 'Comprehensive machine learning project involving data analysis, website analytics, and predictive modeling using Python. Developed and implemented ML algorithms for real-world data scenarios.',
+      title: 'Sistem Prediksi Machine Learning',
+      description: 'Proyek pengembangan model machine learning untuk analisis data dan prediksi menggunakan Python. Implementasi algoritma ML untuk skenario data dunia nyata.',
       category: 'Machine Learning',
       icon: Brain,
       technologies: ['Python', 'Pandas', 'Scikit-learn', 'Data Analysis', 'Predictive Modeling'],
       highlights: [
-        'Data preprocessing and feature engineering',
-        'Website traffic analysis and insights',
-        'Predictive model development',
-        'Performance optimization and validation'
+        'Preprocessing data dan feature engineering',
+        'Analisis traffic website dan insights',
+        'Pengembangan model prediktif',
+        'Optimasi performa dan validasi model'
       ],
-      status: 'Completed',
-      type: 'Certification Program'
+      status: 'Selesai',
+      type: 'Proyek Personal'
     },
     {
-      title: 'IT Support - PT XLSMART Telecom',
-      description: 'Comprehensive IT support role involving hardware installation, software configuration, data backup operations, and local network setup for telecommunications infrastructure.',
-      category: 'IT Support',
-      icon: Server,
-      technologies: ['Windows/Linux', 'Hardware Installation', 'Network Config', 'Data Backup', 'System Admin'],
-      highlights: [
-        'Hardware and software installation',
-        'System backup and recovery procedures',
-        'Local network configuration',
-        'Technical troubleshooting and support'
-      ],
-      status: 'Professional Experience',
-      type: 'Full-time Role'
-    },
-    {
-      title: 'Network Staff Internship - PT Technophoria',
-      description: 'Hands-on internship focused on network infrastructure, computer troubleshooting, and local area network installation and maintenance in corporate environment.',
-      category: 'Networking',
+      title: 'Dashboard Monitoring Jaringan',
+      description: 'Aplikasi web untuk monitoring dan analisis performa jaringan lokal dengan real-time data visualization dan alert system.',
+      category: 'Web Development',
       icon: Network,
-      technologies: ['LAN Setup', 'Network Troubleshooting', 'Router Config', 'System Maintenance', 'Technical Support'],
+      technologies: ['React', 'Node.js', 'Chart.js', 'WebSocket', 'Network API'],
       highlights: [
-        'Office computer troubleshooting',
-        'Local area network installation',
-        'Network infrastructure maintenance',
-        'Corporate IT support services'
+        'Real-time network monitoring',
+        'Visualisasi data interaktif',
+        'System alert dan notifikasi',
+        'Responsive dashboard design'
       ],
-      status: 'Completed',
-      type: 'Internship'
+      status: 'Dalam Pengembangan',
+      type: 'Proyek Personal'
+    },
+    {
+      title: 'Automation Script Collection',
+      description: 'Kumpulan script automation untuk troubleshooting sistem, backup data, dan konfigurasi jaringan untuk meningkatkan efisiensi kerja IT.',
+      category: 'Automation',
+      icon: Server,
+      technologies: ['Python', 'Bash', 'PowerShell', 'Cron Jobs', 'System Admin'],
+      highlights: [
+        'Script backup otomatis',
+        'System health monitoring',
+        'Network configuration tools',
+        'Performance optimization scripts'
+      ],
+      status: 'Aktif',
+      type: 'Tools & Utilities'
     }
   ];
 
@@ -56,9 +56,9 @@ const ProjectsSection = () => {
     switch (category) {
       case 'Machine Learning':
         return 'bg-primary/10 text-primary border-primary/20';
-      case 'IT Support':
+      case 'Web Development':
         return 'bg-secondary/10 text-secondary border-secondary/20';
-      case 'Networking':
+      case 'Automation':
         return 'bg-accent text-accent-foreground border-accent';
       default:
         return 'bg-muted text-muted-foreground border-muted';
@@ -69,10 +69,10 @@ const ProjectsSection = () => {
     <section id="projects" className="py-20 bg-muted/50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gradient">Projects & Experience</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gradient">Proyek</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            A showcase of my practical experience in machine learning, IT support, and network administration 
-            through various projects and professional roles
+            Koleksi proyek yang telah saya kerjakan dalam bidang machine learning, 
+            web development, dan automation untuk solusi teknologi praktis
           </p>
         </div>
 
@@ -113,7 +113,7 @@ const ProjectsSection = () => {
 
                   {/* Key Highlights */}
                   <div>
-                    <h4 className="font-medium text-sm mb-2">Key Achievements:</h4>
+                    <h4 className="font-medium text-sm mb-2">Fitur Utama:</h4>
                     <ul className="space-y-1">
                       {project.highlights.map((highlight, idx) => (
                         <li key={idx} className="text-xs text-muted-foreground flex items-start">
@@ -126,7 +126,7 @@ const ProjectsSection = () => {
 
                   {/* Technologies */}
                   <div>
-                    <h4 className="font-medium text-sm mb-2">Technologies:</h4>
+                    <h4 className="font-medium text-sm mb-2">Teknologi:</h4>
                     <div className="flex flex-wrap gap-1">
                       {project.technologies.map((tech) => (
                         <Badge key={tech} variant="outline" className="text-xs px-2 py-1">
@@ -143,13 +143,11 @@ const ProjectsSection = () => {
                       className="flex-1 hero-gradient text-white shadow-soft hover:shadow-hover transition-spring"
                     >
                       <ExternalLink className="mr-1.5 h-3 w-3" />
-                      Learn More
+                      Lihat Detail
                     </Button>
-                    {project.category === 'Machine Learning' && (
-                      <Button size="sm" variant="outline" className="px-3">
-                        <Github className="h-3 w-3" />
-                      </Button>
-                    )}
+                    <Button size="sm" variant="outline" className="px-3">
+                      <Github className="h-3 w-3" />
+                    </Button>
                   </div>
                 </CardContent>
               </Card>
@@ -161,11 +159,11 @@ const ProjectsSection = () => {
         <div className="mt-16 text-center">
           <Card className="card-gradient shadow-card border-0 max-w-3xl mx-auto">
             <CardContent className="p-8">
-              <h3 className="text-xl font-bold mb-4">Building Real-World Solutions</h3>
+              <h3 className="text-xl font-bold mb-4">Membangun Solusi Teknologi</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Each project represents a step in my journey to understand and implement technology solutions 
-                that solve real problems. From machine learning algorithms to network infrastructure, 
-                I focus on practical applications that make a difference.
+                Setiap proyek mewakili langkah dalam perjalanan saya untuk memahami dan mengimplementasikan 
+                solusi teknologi yang memecahkan masalah nyata. Dari algoritma machine learning hingga 
+                infrastruktur jaringan, saya fokus pada aplikasi praktis yang membuat perbedaan.
               </p>
             </CardContent>
           </Card>

@@ -7,15 +7,15 @@ const ExperienceSection = () => {
     {
       title: 'Machine Learning Path Participant',
       organization: 'DBS Foundation - Coding Camp',
-      type: 'Certification Program',
+      type: 'Program Sertifikasi',
       period: '2024',
       location: 'Remote',
-      description: 'Intensive machine learning program focusing on data analysis, website analytics, and predictive modeling. Gained hands-on experience with Python ML libraries and real-world data scenarios.',
+      description: 'Program machine learning intensif yang fokus pada analisis data, website analytics, dan predictive modeling. Mendapatkan pengalaman hands-on dengan Python ML libraries dan skenario data dunia nyata.',
       achievements: [
-        'Completed comprehensive ML curriculum',
-        'Developed data analysis and visualization skills',
-        'Built predictive models using Python',
-        'Earned certification in machine learning'
+        'Menyelesaikan kurikulum ML yang komprehensif',
+        'Mengembangkan keterampilan analisis dan visualisasi data',
+        'Membangun model prediktif menggunakan Python',
+        'Memperoleh sertifikasi machine learning'
       ],
       technologies: ['Python', 'Pandas', 'Scikit-learn', 'Data Visualization'],
       status: 'completed'
@@ -23,15 +23,15 @@ const ExperienceSection = () => {
     {
       title: 'IT Support Specialist',
       organization: 'PT XLSMART Telecom Sejahtera Tbk',
-      type: 'Professional Role',
+      type: 'Peran Profesional',
       period: '2023 - 2024',
       location: 'Indonesia',
-      description: 'Provided comprehensive IT support including hardware/software installation, system backup operations, and local network configuration for telecommunications infrastructure.',
+      description: 'Memberikan dukungan IT komprehensif termasuk instalasi hardware/software, operasi backup sistem, dan konfigurasi jaringan lokal untuk infrastruktur telekomunikasi.',
       achievements: [
-        'Managed hardware and software installations',
-        'Implemented data backup and recovery procedures',
-        'Configured local area networks',
-        'Provided technical support and troubleshooting'
+        'Mengelola instalasi hardware dan software',
+        'Mengimplementasikan prosedur backup dan recovery data',
+        'Mengkonfigurasi jaringan area lokal',
+        'Memberikan dukungan teknis dan troubleshooting'
       ],
       technologies: ['Windows/Linux', 'Network Configuration', 'Hardware Installation', 'System Administration'],
       status: 'completed'
@@ -39,47 +39,29 @@ const ExperienceSection = () => {
     {
       title: 'Network Staff Intern',
       organization: 'PT. Technophoria Indonesia',
-      type: 'Internship',
+      type: 'Magang',
       period: '2023',
       location: 'Indonesia',
-      description: 'Hands-on internship focused on network infrastructure management, computer troubleshooting, and local area network installation in corporate environment.',
+      description: 'Magang hands-on yang fokus pada manajemen infrastruktur jaringan, troubleshooting komputer, dan instalasi jaringan area lokal di lingkungan korporat.',
       achievements: [
-        'Troubleshot office computer systems',
-        'Installed and maintained LAN infrastructure',
-        'Supported network maintenance operations',
-        'Gained practical networking experience'
+        'Troubleshooting sistem komputer kantor',
+        'Instalasi dan pemeliharaan infrastruktur LAN',
+        'Mendukung operasi pemeliharaan jaringan',
+        'Mendapatkan pengalaman networking praktis'
       ],
       technologies: ['LAN Setup', 'Network Troubleshooting', 'System Maintenance', 'Technical Support'],
       status: 'completed'
-    },
-    {
-      title: 'Telecommunications Engineering Student',
-      organization: 'Universitas Telkom',
-      type: 'Education',
-      period: '2021 - Present',
-      location: 'Bandung, Indonesia',
-      description: 'Currently pursuing bachelor\'s degree in Telecommunications Engineering with focus on network technologies, system administration, and emerging technologies like machine learning.',
-      achievements: [
-        'Active student in telecommunications program',
-        'Specialized in network and system technologies',
-        'Engaged in practical learning projects',
-        'Maintaining strong academic performance'
-      ],
-      technologies: ['Telecommunications', 'Network Theory', 'System Design', 'Engineering Principles'],
-      status: 'current'
     }
   ];
 
   const getTypeColor = (type: string) => {
     switch (type) {
-      case 'Professional Role':
+      case 'Peran Profesional':
         return 'bg-primary/10 text-primary border-primary/20';
-      case 'Internship':
+      case 'Magang':
         return 'bg-secondary/10 text-secondary border-secondary/20';
-      case 'Certification Program':
+      case 'Program Sertifikasi':
         return 'bg-accent text-accent-foreground border-accent';
-      case 'Education':
-        return 'bg-muted text-muted-foreground border-muted';
       default:
         return 'bg-muted text-muted-foreground border-muted';
     }
@@ -95,10 +77,10 @@ const ExperienceSection = () => {
     <section id="experience" className="py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gradient">Professional Experience</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gradient">Pengalaman</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            My journey through education, internships, and professional roles that have shaped 
-            my expertise in IT, networking, and machine learning
+            Perjalanan saya melalui pendidikan, magang, dan peran profesional yang telah membentuk 
+            keahlian saya di bidang IT, networking, dan machine learning
           </p>
         </div>
 
@@ -137,7 +119,7 @@ const ExperienceSection = () => {
                                 {experience.type}
                               </Badge>
                               <Badge variant="outline" className={getStatusColor(experience.status)}>
-                                {experience.status === 'current' ? 'Current' : 'Completed'}
+                                {experience.status === 'current' ? 'Saat Ini' : 'Selesai'}
                               </Badge>
                             </div>
                             <div className="flex items-center space-x-4 text-sm text-muted-foreground">
@@ -159,7 +141,7 @@ const ExperienceSection = () => {
 
                         {/* Achievements */}
                         <div className="mb-4">
-                          <h4 className="font-medium mb-2">Key Achievements:</h4>
+                          <h4 className="font-medium mb-2">Pencapaian Utama:</h4>
                           <ul className="grid grid-cols-1 md:grid-cols-2 gap-1">
                             {experience.achievements.map((achievement, idx) => (
                               <li key={idx} className="text-sm text-muted-foreground flex items-start">
@@ -172,7 +154,7 @@ const ExperienceSection = () => {
 
                         {/* Technologies */}
                         <div>
-                          <h4 className="font-medium mb-2">Technologies & Skills:</h4>
+                          <h4 className="font-medium mb-2">Teknologi & Keterampilan:</h4>
                           <div className="flex flex-wrap gap-2">
                             {experience.technologies.map((tech) => (
                               <Badge key={tech} variant="secondary" className="text-xs">
@@ -195,11 +177,11 @@ const ExperienceSection = () => {
           <Card className="card-gradient shadow-card border-0 max-w-3xl mx-auto">
             <CardContent className="p-8">
               <GraduationCap className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-4">Continuous Growth & Learning</h3>
+              <h3 className="text-xl font-bold mb-4">Pertumbuhan & Pembelajaran Berkelanjutan</h3>
               <p className="text-muted-foreground leading-relaxed">
-                From academic foundations to professional experiences, each role has contributed to my 
-                comprehensive understanding of technology. I'm passionate about applying theoretical knowledge 
-                to solve real-world challenges in IT, networking, and emerging technologies.
+                Dari fondasi akademis hingga pengalaman profesional, setiap peran telah berkontribusi pada 
+                pemahaman teknologi yang komprehensif. Saya bersemangat menerapkan pengetahuan teoritis 
+                untuk memecahkan tantangan dunia nyata di bidang IT, networking, dan teknologi emerging.
               </p>
             </CardContent>
           </Card>
