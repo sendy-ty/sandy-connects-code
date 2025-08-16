@@ -8,9 +8,9 @@ const AboutSection = () => {
     <section id="about" className="py-20 bg-muted/50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gradient">About Me</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gradient">Tentang Saya</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Get to know more about my background, interests, and what drives my passion for technology
+            Kenali lebih dalam tentang latar belakang, minat, dan yang mendorong passion saya terhadap teknologi
           </p>
         </div>
 
@@ -42,8 +42,9 @@ const AboutSection = () => {
                       <GraduationCap className="h-5 w-5 text-primary" />
                     </div>
                     <div>
-                      <p className="font-medium">Education</p>
-                      <p className="text-sm text-muted-foreground">Universitas Telkom</p>
+                      <p className="font-medium">Pendidikan</p>
+                      <p className="text-sm text-muted-foreground">SMK Telkom Purwokerto (TKJ)</p>
+                      <p className="text-sm text-muted-foreground">Universitas Telkom (Teknik Telekomunikasi)</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -54,7 +55,7 @@ const AboutSection = () => {
                       <MapPin className="h-5 w-5 text-secondary" />
                     </div>
                     <div>
-                      <p className="font-medium">Location</p>
+                      <p className="font-medium">Lokasi</p>
                       <p className="text-sm text-muted-foreground">Purwokerto, Indonesia</p>
                     </div>
                   </CardContent>
@@ -63,16 +64,16 @@ const AboutSection = () => {
 
               {/* Main Description */}
               <div className="space-y-4">
-                <h3 className="text-2xl font-bold">Hello! I'm Sandy Tirta Yudha</h3>
+                <h3 className="text-2xl font-bold">Halo! Saya Sandy Tirta Yudha</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  I'm an active Telecommunications Engineering student at Universitas Telkom with a 
-                  deep passion for technology and innovation. My journey in tech has led me to develop 
-                  expertise in IT support, computer networks, and machine learning.
+                  Saya adalah mahasiswa aktif Teknik Telekomunikasi di Universitas Telkom dengan 
+                  passion yang mendalam untuk teknologi dan inovasi. Perjalanan saya di dunia teknologi 
+                  telah mengembangkan keahlian dalam IT support, jaringan komputer, dan machine learning.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  What excites me most about technology is its power to solve real-world problems and 
-                  connect people across the globe. I enjoy the challenge of optimizing systems, 
-                  troubleshooting complex issues, and building solutions that make a meaningful impact.
+                  Yang paling menarik bagi saya tentang teknologi adalah kekuatannya untuk memecahkan 
+                  masalah dunia nyata dan menghubungkan orang di seluruh dunia. Saya menikmati tantangan 
+                  mengoptimalkan sistem, troubleshooting masalah kompleks, dan membangun solusi yang berdampak.
                 </p>
                 
                 {/* Core Values */}
@@ -81,10 +82,10 @@ const AboutSection = () => {
                     <div className="flex items-start space-x-3">
                       <Heart className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
                       <div>
-                        <h4 className="font-semibold mb-2">My Mission</h4>
+                        <h4 className="font-semibold mb-2">Misi Saya</h4>
                         <p className="text-muted-foreground">
-                          "I enjoy solving technical problems, optimizing systems, and building 
-                          solutions that connect people through technology."
+                          "Saya senang memecahkan masalah teknis, mengoptimalkan sistem, dan membangun 
+                          solusi yang menghubungkan orang melalui teknologi."
                         </p>
                       </div>
                     </div>
@@ -96,7 +97,7 @@ const AboutSection = () => {
               <div className="pt-4">
                 <Button className="hero-gradient text-white shadow-soft hover:shadow-hover transition-spring">
                   <Download className="mr-2 h-4 w-4" />
-                  Download My CV
+                  Unduh CV Saya
                 </Button>
               </div>
             </div>

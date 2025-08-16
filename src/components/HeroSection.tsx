@@ -21,19 +21,18 @@ const HeroSection = () => {
           <div className="text-center lg:text-left">
             <div className="animate-fade-up">
               <p className="text-muted-foreground text-lg mb-4">
-                Hi, I'm Sandy 👋
+                Halo, saya Sandy 👋
               </p>
               <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                Welcome to My
-                <span className="text-gradient block">Portfolio</span>
+                Selamat Datang di
+                <span className="text-gradient block">Portofolio Saya</span>
               </h1>
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl">
                 IT Enthusiast | Network & Machine Learning Learner
               </p>
               <p className="text-muted-foreground mb-8 max-w-2xl leading-relaxed">
-                Passionate telecommunications engineering student at Universitas Telkom, 
-                dedicated to solving technical problems and building innovative solutions 
-                that connect people through technology.
+                Mahasiswa Teknik Telekomunikasi Universitas Telkom yang passionate dalam menyelesaikan 
+                masalah teknis dan membangun solusi inovatif yang menghubungkan orang melalui teknologi.
               </p>
             </div>
 
@@ -43,7 +42,7 @@ const HeroSection = () => {
                 className="hero-gradient text-white shadow-soft hover:shadow-hover transition-spring group"
                 size="lg"
               >
-                View My Work
+                Lihat Karya Saya
                 <ArrowDown className="ml-2 h-4 w-4 group-hover:translate-y-1 transition-transform" />
               </Button>
               <Button 
@@ -52,7 +51,7 @@ const HeroSection = () => {
                 className="border-primary text-primary hover:bg-primary hover:text-white transition-smooth"
               >
                 <Download className="mr-2 h-4 w-4" />
-                Download CV
+                Unduh CV
               </Button>
             </div>
           </div>

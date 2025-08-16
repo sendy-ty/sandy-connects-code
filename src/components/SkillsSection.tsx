@@ -14,46 +14,40 @@ import {
 const SkillsSection = () => {
   const skills = [
     {
-      name: 'Hardware/Software Installation',
-      level: 75,
+      name: 'Instalasi Hardware/Software',
       icon: Wrench,
       category: 'IT Support',
-      description: 'Computer assembly, OS installation, driver configuration'
+      description: 'Perakitan komputer, instalasi OS, konfigurasi driver'
     },
     {
       name: 'Linux System Administration',
-      level: 70,
       icon: Server,
       category: 'System Admin',
-      description: 'Command line, user management, system configuration'
+      description: 'Command line, user management, konfigurasi sistem'
     },
     {
-      name: 'Network Configuration',
-      level: 60,
+      name: 'Konfigurasi Jaringan',
       icon: Wifi,
       category: 'Networking',
-      description: 'Router setup, LAN configuration, troubleshooting'
+      description: 'Setup router, konfigurasi LAN, troubleshooting'
     },
     {
       name: 'Programming',
-      level: 55,
       icon: Code,
       category: 'Development',
-      description: 'Python, JavaScript, basic web development'
+      description: 'Python, JavaScript, pengembangan web dasar'
     },
     {
       name: 'Machine Learning',
-      level: 50,
       icon: Brain,
       category: 'AI/ML',
-      description: 'Data analysis, predictive modeling, Python ML libraries'
+      description: 'Analisis data, pemodelan prediktif, Python ML libraries'
     },
     {
-      name: 'Graphic Design',
-      level: 45,
+      name: 'Desain Grafis',
       icon: Palette,
       category: 'Design',
-      description: 'UI/UX basics, visual design, prototyping'
+      description: 'Dasar UI/UX, desain visual, prototyping'
     }
   ];
 
@@ -67,10 +61,10 @@ const SkillsSection = () => {
     <section id="skills" className="py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gradient">Skills & Expertise</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gradient">Keahlian & Tools</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            A comprehensive overview of my technical skills and areas of expertise, 
-            continuously growing through hands-on experience and learning
+            Tools dan kegiatan yang pernah saya kerjakan, terus berkembang melalui 
+            pengalaman hands-on dan pembelajaran berkelanjutan
           </p>
         </div>
 
@@ -94,33 +88,10 @@ const SkillsSection = () => {
                     </div>
                   </div>
 
-                  <div className="space-y-3">
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm font-medium">Proficiency</span>
-                      <span className="text-sm text-muted-foreground">{skill.level}%</span>
-                    </div>
-                    
-                    <Progress 
-                      value={skill.level} 
-                      className="h-2"
-                    />
-
-                    <p className="text-xs text-muted-foreground leading-relaxed">
+                  <div className="mt-3">
+                    <p className="text-sm text-muted-foreground leading-relaxed">
                       {skill.description}
                     </p>
-                  </div>
-
-                  {/* Skill Level Badge */}
-                  <div className="mt-4 flex justify-end">
-                    <span className={`inline-flex items-center px-2 py-1 rounded-full text-xs font-medium ${
-                      skill.level >= 70 
-                        ? 'bg-primary/10 text-primary' 
-                        : skill.level >= 60 
-                        ? 'bg-secondary/10 text-secondary'
-                        : 'bg-muted text-muted-foreground'
-                    }`}>
-                      {skill.level >= 70 ? 'Intermediate' : skill.level >= 60 ? 'Basic+' : 'Basic'}
-                    </span>
                   </div>
                 </CardContent>
               </Card>
@@ -132,11 +103,11 @@ const SkillsSection = () => {
         <div className="mt-16 text-center">
           <Card className="card-gradient shadow-card border-0 max-w-4xl mx-auto">
             <CardContent className="p-8">
-              <h3 className="text-xl font-bold mb-4">Continuous Learning Journey</h3>
+              <h3 className="text-xl font-bold mb-4">Perjalanan Belajar Berkelanjutan</h3>
               <p className="text-muted-foreground leading-relaxed">
-                My technical skills are constantly evolving through practical projects, internships, 
-                and self-directed learning. I believe in hands-on experience and staying updated with 
-                the latest industry trends and technologies.
+                Keahlian teknis saya terus berkembang melalui proyek praktis, magang, 
+                dan pembelajaran mandiri. Saya percaya pada pengalaman hands-on dan selalu update dengan 
+                tren industri dan teknologi terbaru.
               </p>
             </CardContent>
           </Card>

@@ -46,10 +46,10 @@ const ContactSection = () => {
     <section id="contact" className="py-20 bg-muted/50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gradient">Let's Connect</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gradient">Mari Terhubung</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            I'm always open to discussing new opportunities, collaborations, or just having a 
-            conversation about technology. Feel free to reach out!
+            Saya selalu terbuka untuk diskusi tentang peluang baru, kolaborasi, atau sekadar 
+            berbincang tentang teknologi. Jangan ragu untuk menghubungi!
           </p>
         </div>
 
@@ -64,8 +64,8 @@ const ContactSection = () => {
                       <MessageCircle className="h-6 w-6 text-white" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold">Get in Touch</h3>
-                      <p className="text-muted-foreground">Ready to start a conversation</p>
+                      <h3 className="text-xl font-bold">Hubungi Saya</h3>
+                      <p className="text-muted-foreground">Siap untuk memulai percakapan</p>
                     </div>
                   </div>
 
@@ -103,7 +103,7 @@ const ContactSection = () => {
 
                   {/* Social Links */}
                   <div className="mt-8 pt-6 border-t border-border">
-                    <h4 className="font-medium mb-4">Connect with me</h4>
+                    <h4 className="font-medium mb-4">Terhubung dengan saya</h4>
                     <div className="flex space-x-4">
                       {socialLinks.map((social) => {
                         const IconComponent = social.icon;
@@ -134,11 +134,11 @@ const ContactSection = () => {
                       <Send className="h-8 w-8 text-white" />
                     </div>
                     
-                    <h3 className="text-2xl font-bold mb-4">Ready to Collaborate?</h3>
+                    <h3 className="text-2xl font-bold mb-4">Siap Berkolaborasi?</h3>
                     <p className="text-muted-foreground mb-8 leading-relaxed">
-                      Whether you're looking for IT support, network solutions, or exploring 
-                      machine learning opportunities, I'd love to hear about your project and 
-                      how we can work together.
+                      Baik Anda mencari dukungan IT, solusi jaringan, atau mengeksplorasi 
+                      peluang machine learning, saya ingin mendengar tentang proyek Anda dan 
+                      bagaimana kita bisa bekerja sama.
                     </p>
 
                     <div className="space-y-4">
@@ -148,7 +148,7 @@ const ContactSection = () => {
                         onClick={() => window.location.href = 'mailto:sandytirtaa@gmail.com'}
                       >
                         <Mail className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-                        Send me an Email
+                        Kirim Email
                       </Button>
                       
                       <Button 
@@ -158,7 +158,7 @@ const ContactSection = () => {
                         onClick={() => window.open('https://github.com/sendy-ty', '_blank')}
                       >
                         <Github className="mr-2 h-5 w-5" />
-                        View GitHub Profile
+                        Lihat Profil GitHub
                       </Button>
                     </div>
                   </div>
@@ -168,15 +168,15 @@ const ContactSection = () => {
                     <div className="grid grid-cols-3 gap-4 text-center">
                       <div>
                         <p className="text-2xl font-bold text-primary">3+</p>
-                        <p className="text-sm text-muted-foreground">Projects</p>
+                        <p className="text-sm text-muted-foreground">Projek</p>
                       </div>
                       <div>
                         <p className="text-2xl font-bold text-secondary">2+</p>
-                        <p className="text-sm text-muted-foreground">Years Experience</p>
+                        <p className="text-sm text-muted-foreground">Tahun Pengalaman</p>
                       </div>
                       <div>
                         <p className="text-2xl font-bold text-primary">100%</p>
-                        <p className="text-sm text-muted-foreground">Commitment</p>
+                        <p className="text-sm text-muted-foreground">Komitmen</p>
                       </div>
                     </div>
                   </div>
